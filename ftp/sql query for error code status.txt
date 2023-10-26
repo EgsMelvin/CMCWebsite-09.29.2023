@@ -1,0 +1,18 @@
+SELECT date as Date, QUANTIZE(time, 3600) AS Hour, 
+       sc-status as Status, count(*) AS ErrorCount
+FROM   {filename} 
+WHERE  sc-status >= 400 
+GROUP BY date, hour, sc-status 
+HAVING ErrorCount > 25
+ORDER BY ErrorCount DESC
+
+
+
+The result could something like this:
+
+Date       Hour     Status ErrorCount
+---------- -------- ------ ------
+2009-07-24 18:00:00 404    187
+2009-07-17 13:00:00 500    99
+2009-07-21 21:00:00 404    80
+2009-07-03 04:00:00 404    45

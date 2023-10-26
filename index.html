@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CalcMenu | Recipe Management Software</title>
+  <meta name="title" content="CalcMenu | The Trusted Recipe Management Software for Professional Kitchens">
+  <meta name="description" content="CalcMenu is an innovative recipe management software tailored to your unique needs. Experience the power of AI technology, API integration, menu engineering, smart inventory and advanced culinary management.">
+  <meta name="keywords" content="">
+
+  <link rel="canonical" href="https://www.calcmenu.com">
+  <link rel="alternate" hreflang="fr" href="https://www.calcmenu.com/fr/">
+  <link rel="alternate" hreflang="it" href="https://www.calcmenu.com/it/">
+  <link rel="alternate" hreflang="de" href="https://www.calcmenu.com/de/">
+  <link rel="alternate" hreflang="en" href="https://www.calcmenu.com">
+  <link rel="alternate" hreflang="x-default" href="https://www.calcmenu.com">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="assets/css/fonts.googleapis.css" rel="stylesheet" rel="preload" as="font">
+
+  <!-- Vendor CSS Files -->
+  <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/aos/aos.css"></noscript>
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"></noscript>
+  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css"></noscript>
+  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css"></noscript>
+  <link rel="preload"  href="assets/vendor/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css"></noscript>
+  <link rel="preload" href="assets/vendor/boxicons/css/boxicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css"></noscript>
+
+  <!--Jquery-->
+  <script src="assets/js/jquery.min.js" defer></script>
+
+  <!-- Template Main CSS File -->
+  <link as="style" crossorigin="anonymous" href="assets/css/style.css" rel="stylesheet" rel="preload">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P72J6CX');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P72J6CX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a target="_blank" href="https://www.facebook.com/calcmenucloud/"  class="facebook"><i class="bi bi-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/calcmenucloud/"  class="instagram"><i class="bi bi-instagram"></i></a>
+        <a target="_blank" href="https://twitter.com/calcmenucloud"  class="twitter"><i class="bi bi-twitter"></i></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UC63-zKJ-c_OQuko6fIyI-SQ"  class="you-tube"><i class="bi bi-youtube"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/showcase/calcmenucloud"  class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="language d-flex align-items-center">
+        <a id="en" href="/" class="translate d-inline active">English</a>
+        <a id="fr" href="/fr/" class="translate d-inline" >Français</a>
+        <a id="de" href="/de/" class="translate d-inline">Deutsch</a>
+        <a id="it" href="/it/" class="translate d-inline">Italiano</a>
+      
+        <div class="space"></div>
+        <button type="button" class="btn">
+        <a target="_blank" href="https://app.calcmenu.com/en" class="login">Login</a></button>
+        <button type="button" class="btn">
+        <a target="_blank" href="https://app.calcmenu.com/en" class="signup">SignUp</a>
+        </button>
+        <button type="button" class="btn">
+        <a target="_blank" href="https://inforequest.calcmenu.com/#/?culture=en" class="askus">Ask Us</a>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="/"><img src="assets/img/CalcMenu Logo.svg" loading="lazy"></a></h1>
+      <nav id="navbar" class="navbar">
+        
+        <ul>
+          <!--<li><a class="active" href="/">Home</a></li>-->
+          <li id="ddFeature" class="dropdown">
+            <a style="cursor: pointer;">
+              <span>Feature Highlights</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li><a href="/en/ai-capabilities">AI Capabilities</a></li>
+              <li><a href="/en/food-label">Food Label Assistant</a></li>
+              <li><a href="/en/emenu">eMenu</a></li>
+              <li><a href="/en/emenu-plan">eMenu Plan</a></li>
+              <li><a href="/en/menu-plan-view">Menu Plan View</a></li>
+              <li><a href="/en/api-services">API Services</a></li>
+            </ul>
+          </li>
+           <!--<ul>-->
+          <li id="ddIndustries" class="dropdown">
+            <a style="cursor: pointer;">
+              <span>Industries</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li><a  href="/en/industry/school">Schools</a></li>
+              <li><a  href="/en/industry/restaurants-hotels-bakery-catering">Restaurants, Hotels, & Catering</a></li>
+              <li><a  href="/en/industry/restaurants-hotels-chains-catering">Chains</a></li>
+              <li><a  href="/en/industry/airlines-and-cruiselines">Airline and Cruise Lines</a></li>
+              <li><a  href="/en/industry/individual-chef">Individual Chefs</a></li>
+              <li><a  href="/en/industry/hospitals">Hospitals</a></li>
+              <li><a  href="/en/industry/nursing-home">Nursing Home</a></li>
+              <li><a  href="/en/industry/consumer-and-professional-brands">Consumer Brand</a></li>
+            </ul>
+          </li>
+          <li><a href="/en/partnership">Partners</a></li>
+          <li><a target="_blank" href="https://payment.calcmenu.com/#/plan-and-region?culture=en">Plans & Pricing</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/en/resources">Resources</a></li>
+          <li><a href="/en/suppliers">For Suppliers</a></li>
+          </ul>
+
+          <!-- <ul id="menu"> -->
+            <!-- ======= dynamic menu ======= -->
+          <!-- </ul> -->
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- START OF NEW LAYOUT -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out">
+      <h3><span>Unlock Culinary Efficiency</span></h3>
+      <h5>We empower food service <br>
+        professionals to save time and <br>
+        prioritize what's important – the food!</h5>
+      <a href="https://app.calcmenu.com/en"  target="_blank" class="btn rounded-pill btn-get-started">Get Started</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Introduction Section ======= -->
+    <section id="introduction" class="introduction no-bpd">
+      <div class="container" data-aos="fade-up">
+      <h2>Professional Management Solution for the Food Industry</h2>
+      <h1>Leverage Data Intelligence to Boost Your Profitability</h1></br>
+      <p>Don’t have the spare time to manually manage your recipes to achieve consistency and quality? Wondering how to determine the best prices to sell your food products to achieve success? Trying to find a way to reduce food wastage and practice sustainability?</p>
+      <p style="margin-bottom: 0px;">Our solutions are powered by data intelligence to elevate your food business to the next level. </p>
+
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+              <div class="">
+                <div class="mx-auto my-auto">
+                  <p class="m-0 d-flex align-items-center gap-2">
+                    <img src="assets/img/check-icon.png" class="check" loading="lazy"> Centralize recipe and data management
+                  </p>
+                  <p class="m-0 d-flex align-items-center gap-2">
+                    <img src="assets/img/check-icon.png" class="check" loading="lazy"> Simplify the generation of shopping lists
+                  </p>
+                  <p class="m-0 d-flex align-items-center gap-2">
+                    <img src="assets/img/check-icon.png" class="check" loading="lazy"> Meet food regulations
+                  </p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-12 col-lg-6 d-flex align-items-stretch" >
+              <div class="">
+                <div class="mx-auto my-auto">
+                  <p class="m-0 d-flex align-items-center gap-2">
+                    <img src="assets/img/check-icon.png" class="check" loading="lazy"> Satisfy consumer demands
+                  </p>
+                  <p class="m-0 d-flex align-items-center gap-2">
+                    <img src="assets/img/check-icon.png" class="check" loading="lazy"> Achieve food sustainability
+                  </p>
+                  <p class="m-0 d-flex align-items-center gap-2">
+                    <img src="assets/img/check-icon.png" class="check" loading="lazy"> Make informed business decisions
+                  </p>
+                </div>
+              </div>
+          </div>
+          <!--Get Started Button-->
+          <div class="" style="padding-top: 20px;">
+            <a href="https://app.calcmenu.com/en"  target="_blank" class="btn rounded-pill btn-primary py-2 px-2 d-inline-block theme_button enbtn">Get Started</a></br>
+          </div>
+        </div>
+
+        <!-- Partners  -->
+        <section
+        id="testimonials1"
+        class="testimonials"
+        style="background: #f7d7da; padding: 30px 10px; margin-top: 30px; border-radius: 0px; width: 100%;" 
+        ><div style="color: grey; font-weight: 200px; text-align: center; padding-bottom: 20px;">TRUSTED BY</div>
+        <div class="container" data-aos="zoom-in">
+            <div
+            class="testimonials-slider swiper"
+            style="margin-left: 25px; margin-right: 25px"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            >
+            <div class="swiper-wrapper">
+                <div
+                class="swiper-slide my-auto"
+                data-swiper-autoplay="60000"
+                >
+                <div class="testimonial-item">
+                  <!--<div style="color: grey; font-weight: 200px;">APPROUVÉ PAR</div>-->
+                  <div class="row">
+                    <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 1_Migros.webp"
+                        class="logo"
+                        alt="Migros"
+                        />
+                    </div>
+                    <div class="col" id="swiperImg">
+                      <img
+                      loading="lazy"
+                      src="../assets/img/CalcMenuClientLogo/CalcMenu Client 2_Nestle.webp"
+                      class="logo"
+                      alt="Nestle"
+                      />
+                    </div>
+                    <div class="col" id="swiperImg">
+                      <img
+                      loading="lazy"
+                      src="../assets/img/CalcMenuClientLogo/CalcMenu Client 3_Vitamix.webp"
+                      class="logo"
+                      alt="Vitamix"
+                      />
+                    </div>
+                    <div class="col sodexo" id="swiperImg">
+                      <img
+                      loading="lazy"
+                      src="../assets/img/CalcMenuClientLogo/CalcMenu Client 4_Sodexo.webp"
+                      class="logo"
+                      alt="Sodexo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div
+                class="swiper-slide my-auto"
+                data-swiper-autoplay="60000"
+                >
+                <div class="testimonial-item">
+                    <div class="row">
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 5_SilverSea.webp"
+                        class="logo"
+                        alt="SilverSea"
+                        />
+                      </div>
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 6_DelMonte.webp"
+                        class="logo"
+                        alt="DelMonte"
+                        />
+                      </div>
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 7_COOP.webp"
+                        class="logo"
+                        alt="COOP"
+                        />
+                      </div>
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 8_Autogrill.webp"
+                        class="logo"
+                        alt="Autogrill"
+                        />
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide my-auto"
+                data-swiper-autoplay="60000"
+                >
+                <div class="testimonial-item">
+                    <div class="row">
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 9_MSC.webp"
+                        class="logo"
+                        alt="MSC"
+                        />
+                      </div>
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 10_Manor.webp"
+                        class="logo"
+                        alt="Manor"
+                        />
+                      </div>
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 11_LSG.webp"
+                        class="logo"
+                        alt="LSG"
+                        />
+                      </div>
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 12_LesRosches.webp"
+                        class="logo"
+                        alt="LesRosches"
+                        />
+                      </div>
+                    </div>
+                </div>
+                </div>
+
+                <div
+                class="swiper-slide my-auto"
+                data-swiper-autoplay="60000"
+                >
+                <div class="testimonial-item">
+                    <div class="row">
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 13_Hilcona.webp"
+                        class="logo"
+                        alt="Hilcona"
+                        />
+                      </div>
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 14_Enderun.webp"
+                        class="logo"
+                        alt="Enderun"
+                        />
+                      </div>
+                      <div class="col" id="swiperImg">
+                        <img
+                        loading="lazy"
+                        src="../assets/img/CalcMenuClientLogo/CalcMenu Client 15_CCA.webp"
+                        class="logo"
+                        alt="CCA"
+                        />
+                      </div>
+                    </div>
+                </div>
+                </div>
+
+                
+
+                
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <div
+            class="swiper-button-prev"
+            style="
+                background-color: transparent;
+                color: #e4717a;
+                font-weight: 200;
+            "
+            ></div>
+            <div
+            class="swiper-button-next"
+            style="
+                background-color: transparent;
+                color: #e4717a;
+                font-weight: 200;
+            "
+            ></div>
+        </div>
+        </section>
+
+      </div>
+    </section>
+
+    <!-- END OF NEW LAYOUT -->
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services services no-bpd">
+      <div class="container new" data-aos="fade-up">
+        <h2>Adopt a Digital Integrated Approach with CalcMenu</h1>
+        <h1>Grow Your Food Business</h2></br>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/homepage-icons-webp/Ingredient.webp" class="img-fluid" loading="lazy"></div>
+              <h4 class="title">Ready-to-use Ingredient Information</h4>
+              <p class="description">Get access to thousands of high-quality food products from our generic database with ready-to-use nutritional values, 
+                allergens, composition, and specific determination.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><img src="assets/img/homepage-icons-webp/encoding.webp" class="img-fluid" loading="lazy"></div>
+              <h4 class="title">Data Encoding <br>Services</h4>
+              <p class="description">We encode supplier-specific product information into CalcMenu without any additional charges.* Simply endorse us to your suppliers to collect your preferred product data.  
+                <br><i>*Data Encoding is subject to our <a target="_blank" href="https://info.calcmenu.com/terms-of-service-en/">Terms of Service</a> </i></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><img src="assets/img/homepage-icons-webp/Data.webp" class="img-fluid" loading="lazy"></div>
+              <h4 class="title">Reliable Data Management</h4>
+              <p class="description">Spend less time on administrative work. We maintain and update all the food product data that you would need in CalcMenu.*
+                <br><i>*Data Management is subject to our <a target="_blank" href="https://info.calcmenu.com/terms-of-service-en/">Terms of Service</a> </i></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><img src="assets/img/homepage-icons-webp/Recipe.webp" class="img-fluid" loading="lazy"></div>
+              <h4 class="title">Advance Recipe Management System</h4>
+              <p class="description">We provide a reliable recipe management solution for you to store your recipes online. You can add your own recipes easily, 
+                find recipes quickly with our advanced recipe search tool and our simplified index, and view all the important recipe details. View and use our built-in database of professional recipes, tried and tested in commercial kitchens.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about new section-bg">
+      <div class="container new" data-aos="fade-up">
+        <h2>Digitize Your Workflows to Eliminate Processes-Related Inefficiencies</h2>
+        <h1>Work Better, Faster, and Smarter</h1>
+
+        <div class="row mb-3 pb-3">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <picture>
+              <source
+                srcset="assets/img/Mobile/CalcMenu_Kitchen_Intelligence_Data_Power.webp"
+                media="(max-width: 600px)"
+              >
+              <img src="assets/img/CalcMenu_Kitchen_Intelligence_Data_Power.webp" class="img-fluid" alt="CalcMenu Kitchen Intelligence Data Power" loading="lazy">
+            </picture>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <p>We continue to innovate our ingredient database and recipe management system to help you leverage digital technology to drive your business forward.</p>
+            <br>
+            <p>Explore our intuitive and exciting modules and features.</p><br>
+            <div class="">
+              <a href="https://app.calcmenu.com/en"  target="_blank" class="btn rounded-pill btn-primary py-2 px-2 d-inline-block theme_button enbtn">Sign Up Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row feature mb-5">
+            <h2>AI-Led Technology</h2>
+            <p>Discover how our AI-Led technologies identify, implement, scale, and sustain your business operations.</p>
+            <a href="/en/ai-capabilities"><i>Take a sneak peak ></i></a>
+          </div>
+          <div class="row feature mb-5">
+            <h2>API</h2>
+            <p>Choose from our different API methods to retrieve data from the CalcMenu database for integration with different websites.</p>
+            <a href="/en/api-services"><i>Learn more ></i></a>
+          </div>
+          <div class="row feature mb-5">
+            <h2>Menu Engineering</h2>
+            <p>Optimize and evaluate your data to design more profitable menus. Access the sales mix, a detailed evaluation of total items sold based on profit earned from these items.</p>
+            <!-- <a href=""><i>Read more ></i></a> -->
+          </div>
+          <div class="row feature mb-5">
+            <h2>Digital Ordering<sup><i> Coming soon</i></sup></h2>
+            <p>Create your shopping lists and send them to your preferred suppliers via PDF, Excel, or via direct connection to your suppliers on the system.</p>
+          </div>
+          <div class="row feature mb-5">
+            <h2>Smart Inventory<i><sup> Coming soon</sup></i></h2>
+            <p>Upgrade from physical worksheets with our digital inventory tool for accurate inventory tracking. You can automatically track activity based on your orders and sales.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+  
+    <!-- Subscription -->
+    <section id="testimonials" class="testimonials subscription new">
+      <div class="container aos-init aos-animate" data-aos="zoom-in">
+      <div class="testimonial-item">
+          <h2>Enjoy our risk-free subscription tiers.</h2>
+          <p id="needs">
+            Find out more about our free version, or unlock more features with our paid plans.
+          </p>
+          <a href="https://app.calcmenu.com/en" target="_blank"><button type="button" class="btn rounded-pill btn-primary py-2 px-2 d-inline-block theme_button enbtn" lang="en">
+            Register Today
+          </button></a>
+      </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container new aos-init aos-animate data-aos" data-aos="fade-up">
+      <h2>Personalized Recipe Management Software</h2>
+      <h1>Tailored to Perfection</h1>
+      <p>We recognize the diverse needs and demands that enterprises face, and that's why we have meticulously crafted a revolutionary recipe management software that goes above and beyond to cater to your distinct requirements.
+        <br><br>
+        Our cutting-edge solutions are thoughtfully designed to empower your business and ensure seamless operations. </p>
+    </div>
+  </section>
+
+  <!-- Personalized Solution -->
+  <section id="testimonials" class="testimonials solution new">
+    <div class="container aos-init aos-animate" data-aos="zoom-in">
+    <div class="testimonial-item">
+        <h2>Need a more personalized solution?</h2>
+        <p id="needs">
+          With CalcMenu Enterprise, we provide bespoke services that are precisely tailored to your unique business model.
+        </p>
+        <a href="https://inforequest.calcmenu.com/#/?culture=en" target="_blank"><button type="button" class="btn rounded-pill btn-primary py-2 px-2 d-inline-block theme_button enbtn" lang="en">
+          Let's Talk
+        </button></a>
+    </div>
+    </div>
+</section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Subscribe to our newsletter</h4>
+            <p>By entering your email, you agree to our <a target="_blank" href="https://info.calcmenu.com/terms-of-service-en/">Terms of Service</a> and <a target="_blank" href="https://info.calcmenu.com/privacy-policy-en/">Privacy Policy</a>.</p>
+            <form action="javascript:void(0)" method="post">
+              <input type="email" id="inputEmail" name="email" placeholder="Your email address"><input type="submit" id="formButton" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <img src="assets/img/CalcMenu Logo.svg" loading="lazy">
+            <p><a target="_blank" href="https://www.eg-software.com/">EGS Enggist & Grandjean Software</a> has over 30 years of combined technological and culinary 
+              expertise. We are the creators of CalcMenu, one of the leading recipe management software 
+              in the market. We design advanced culinary software and solutions for commercial kitchens to achieve 
+              improved recipe and foodservice management, back-office operations, and much more.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index">Home</a></li>
+              
+              <li><i class="bx bx-chevron-right"></i> <a href="en/resources">Resources</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="en/suppliers">For Suppliers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://info.calcmenu.com/terms-of-service-en/">Terms of Service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://info.calcmenu.com/privacy-policy-en/">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Features</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Multi-device Compatibility</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Digital Ordering</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Smart Inventory</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Menu Planning & Engineering</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <div class="social-links mt-3">
+              <a target="_blank" href="https://www.facebook.com/calcmenucloud/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/calcmenucloud/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a target="_blank" href="https://twitter.com/calcmenucloud" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a target="_blank" href="https://www.youtube.com/channel/UC63-zKJ-c_OQuko6fIyI-SQ" class="you-tube"><i class="bx bxl-youtube"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/showcase/calcmenucloud" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright text-center">
+        &copy; 2023 <strong>CalcMenu</strong> Cloud. All Rights Reserved.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- <div id="preloader"></div> -->
+  <a href="#"  class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="text/javascript">
+    _linkedin_partner_id = "4579794";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+    window.lintrk.q=[]}
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})(window.lintrk);
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4579794&fmt=gif" />
+  </noscript>
+
+</body>
+
+</html>
